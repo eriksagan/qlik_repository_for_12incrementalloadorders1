@@ -1,8 +1,5 @@
 ///$tab Start
-Gitoqlik
-Gitoqlik is on the active testing stage.
-Your feedback could make product better. Please, take our 1-minutes survey
-Found Qlik application "1.2 Incremental load orders(1)"
+
 // Context
 Set vContext = 'DEV';
 //Set vContext = 'PROD';
