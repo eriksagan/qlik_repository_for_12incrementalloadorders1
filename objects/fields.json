@@ -190,7 +190,7 @@
   },
   {
     "qName": "accept_xtime",
-    "qCardinal": 45622,
+    "qCardinal": 45578,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -299,7 +299,7 @@
   },
   {
     "qName": "alloc_time",
-    "qCardinal": 56811,
+    "qCardinal": 56677,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -421,7 +421,7 @@
   },
   {
     "qName": "chgtot",
-    "qCardinal": 273547,
+    "qCardinal": 273551,
     "qTags": [
       "$numeric"
     ],
@@ -463,7 +463,7 @@
   },
   {
     "qName": "comp_time",
-    "qCardinal": 48983,
+    "qCardinal": 48973,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -504,7 +504,7 @@
   },
   {
     "qName": "consign",
-    "qCardinal": 18842,
+    "qCardinal": 18840,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -512,7 +512,7 @@
   },
   {
     "qName": "consignment_num",
-    "qCardinal": 535023,
+    "qCardinal": 535018,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -563,7 +563,7 @@
   },
   {
     "qName": "createtime",
-    "qCardinal": 52347,
+    "qCardinal": 52223,
     "qTags": [
       "$numeric"
     ],
@@ -584,7 +584,7 @@
   },
   {
     "qName": "csttot",
-    "qCardinal": 515809,
+    "qCardinal": 515811,
     "qTags": [
       "$numeric"
     ],
@@ -610,7 +610,7 @@
   },
   {
     "qName": "cust",
-    "qCardinal": 3941,
+    "qCardinal": 3936,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -776,7 +776,7 @@
   },
   {
     "qName": "dmrgaddrkey",
-    "qCardinal": 5289,
+    "qCardinal": 5277,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -873,7 +873,7 @@
   },
   {
     "qName": "doctradename",
-    "qCardinal": 20418,
+    "qCardinal": 20419,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1075,7 +1075,7 @@
   },
   {
     "qName": "eqpidkeyp10",
-    "qCardinal": 22,
+    "qCardinal": 21,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1309,7 +1309,7 @@
   },
   {
     "qName": "eta",
-    "qCardinal": 5588,
+    "qCardinal": 5587,
     "qTags": [
       "$numeric",
       "$integer",
@@ -1322,7 +1322,7 @@
   },
   {
     "qName": "etd",
-    "qCardinal": 5561,
+    "qCardinal": 5560,
     "qTags": [
       "$numeric",
       "$integer"
@@ -1355,7 +1355,7 @@
   },
   {
     "qName": "forwardto",
-    "qCardinal": 213,
+    "qCardinal": 212,
     "qTags": [
       "$ascii",
       "$text"
@@ -1518,7 +1518,7 @@
   },
   {
     "qName": "fwd_xtime",
-    "qCardinal": 52819,
+    "qCardinal": 52787,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1526,7 +1526,7 @@
   },
   {
     "qName": "fwd_xuserid",
-    "qCardinal": 735,
+    "qCardinal": 734,
     "qTags": [
       "$ascii",
       "$text"
@@ -1666,7 +1666,7 @@
   },
   {
     "qName": "ihscode",
-    "qCardinal": 1582,
+    "qCardinal": 1579,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1750,7 +1750,7 @@
   },
   {
     "qName": "invoicegroupref",
-    "qCardinal": 41846,
+    "qCardinal": 41845,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1810,7 +1810,7 @@
   },
   {
     "qName": "jobno",
-    "qCardinal": 1155886,
+    "qCardinal": 1155898,
     "qTags": [
       "$numeric",
       "$integer"
@@ -1942,7 +1942,7 @@
   },
   {
     "qName": "loadno",
-    "qCardinal": 427384,
+    "qCardinal": 427382,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2029,7 +2029,7 @@
   },
   {
     "qName": "oblconditions",
-    "qCardinal": 15587,
+    "qCardinal": 15589,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2158,7 +2158,7 @@
   },
   {
     "qName": "offerno",
-    "qCardinal": 96312,
+    "qCardinal": 96278,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2188,7 +2188,7 @@
   },
   {
     "qName": "ordno",
-    "qCardinal": 1248418,
+    "qCardinal": 1248431,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2364,7 +2364,7 @@
   },
   {
     "qName": "pro2created",
-    "qCardinal": 281168,
+    "qCardinal": 281181,
     "qTags": [
       "$numeric",
       "$timestamp"
@@ -2375,7 +2375,7 @@
   },
   {
     "qName": "pro2modified",
-    "qCardinal": 1097589,
+    "qCardinal": 1097602,
     "qTags": [
       "$numeric",
       "$timestamp"
@@ -2386,7 +2386,7 @@
   },
   {
     "qName": "prodcode",
-    "qCardinal": 16433,
+    "qCardinal": 16398,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2394,7 +2394,7 @@
   },
   {
     "qName": "prrowid",
-    "qCardinal": 1248418,
+    "qCardinal": 1248431,
     "qTags": [
       "$ascii",
       "$text"
@@ -2437,7 +2437,7 @@
   },
   {
     "qName": "quocsttotal",
-    "qCardinal": 116942,
+    "qCardinal": 116944,
     "qTags": [
       "$numeric"
     ],
@@ -2447,7 +2447,7 @@
   },
   {
     "qName": "quotno",
-    "qCardinal": 128935,
+    "qCardinal": 128937,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2575,7 +2575,7 @@
   },
   {
     "qName": "seal_number",
-    "qCardinal": 495254,
+    "qCardinal": 495263,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2613,7 +2613,7 @@
   },
   {
     "qName": "shipper",
-    "qCardinal": 9131,
+    "qCardinal": 9130,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2621,7 +2621,7 @@
   },
   {
     "qName": "shpline",
-    "qCardinal": 1035,
+    "qCardinal": 1032,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2848,7 +2848,7 @@
   },
   {
     "qName": "voyage",
-    "qCardinal": 61618,
+    "qCardinal": 61617,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2864,7 +2864,7 @@
   },
   {
     "qName": "vsbkref",
-    "qCardinal": 298960,
+    "qCardinal": 298964,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2896,7 +2896,7 @@
   },
   {
     "qName": "xlock",
-    "qCardinal": 56,
+    "qCardinal": 44,
     "qTags": [
       "$ascii",
       "$text"
@@ -2918,7 +2918,7 @@
   },
   {
     "qName": "xtime",
-    "qCardinal": 53845,
+    "qCardinal": 53741,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
