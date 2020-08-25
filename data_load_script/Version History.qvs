@@ -1,0 +1,29 @@
+///$tab Version History
+// In the version table, developers maintain the individual changes to the application for inclusion in the "About" sheet
+
+// ATTENTION: These tabs/subs/functions are intended to be used TOGETHER and may depend on each other
+//  - Sub Log
+//  - Sub Store
+//  - Version History
+//  - Variables & Settings
+//  - End
+
+Call Log('Start loading version table');
+
+// Version_id = internal running number
+// Version_# = external number
+// Version_Date = date of change/release
+// Version_Developer = developer responsible for change/release
+// Version_Comment = short description of change/release
+
+Version:
+Load * Inline [
+Version_ID, Version_#, Version_Date, Version_Developer, Version_Comment
+0, 0, 15.07.2020, 'Erik Sagan', 'initial version'
+];
+
+// Calculation of the current version number and the date of the current change 
+Let vVersionNr = Subfield( Peek( 'Version_#',-1,'Version' ),' ',1 );
+Let vVersionDate = Subfield( Peek( 'Version_Date',-1,'Version' ),' ',1 );
+
+Call Log('End loading version table');

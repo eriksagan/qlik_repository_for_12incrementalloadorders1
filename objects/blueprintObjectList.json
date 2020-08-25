@@ -1,0 +1,58 @@
+{
+  "qInfos": [
+    {
+      "qId": "267e4cac-9746-422a-ab06-266d4a83f15b",
+      "qType": "story",
+      "modifiedDate": "2020-07-16T07:06:51.038Z"
+    },
+    {
+      "qId": "55f55dbf-4877-4fa8-8cdd-0d115897a0fb",
+      "qType": "sheet",
+      "modifiedDate": "2020-07-16T07:06:51.038Z"
+    },
+    {
+      "qId": "HQHWZR",
+      "qType": "table"
+    },
+    {
+      "qId": "LoadModel",
+      "qType": "LoadModel"
+    },
+    {
+      "qId": "WtvCY",
+      "qType": "qlik-word-cloud"
+    },
+    {
+      "qId": "c51f395f-6260-4e7d-93fa-d79eb3b9bb7e",
+      "qType": "snapshot",
+      "modifiedDate": "2020-07-28T07:53:34.215Z"
+    },
+    {
+      "qId": "c7428d4b-e871-4794-b59a-b02bb1f267a4",
+      "qType": "sheet",
+      "modifiedDate": "2020-07-16T07:06:51.038Z"
+    },
+    {
+      "qId": "eXeuJg",
+      "qType": "slide"
+    },
+    {
+      "qId": "ebf8ad6c-b7d3-4d71-99ca-5890bdb987e3",
+      "qType": "sheet",
+      "modifiedDate": "2020-07-29T08:48:10.742Z"
+    },
+    {
+      "qId": "fe6b9629-c7cb-4c69-a84f-5a239b2ea7c8",
+      "qType": "appprops",
+      "modifiedDate": "2020-07-16T07:06:51.038Z"
+    },
+    {
+      "qId": "zCfCT",
+      "qType": "auto-chart"
+    },
+    {
+      "qId": "zckzVBm",
+      "qType": "table"
+    }
+  ]
+}

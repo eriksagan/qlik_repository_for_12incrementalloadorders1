@@ -1,0 +1,27 @@
+///$tab Section
+LIB CONNECT TO 'DB_MONITOR_s0106db007';
+
+[vw_ordhdr]:
+LOAD *;
+SQL SELECT *
+FROM "QlikData"."dbo"."vw_ordhdr";
+
+
+store [vw_ordhdr] into [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr.qvd] (qvd);
+
+/*
+[vw_product]:
+LOAD *;
+SQL SELECT *
+FROM "QlikData"."dbo"."vw_product";
+
+store [vw_product] into [lib://FC_ET_MONITOR_DEV/Extract/vw_product.qvd] (qvd);
+*/
+
+//REload qvd with incrementals
+/*
+[vw_product]:
+LOAD * 
+ FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_product.qvd]
+(qvd);
+*/

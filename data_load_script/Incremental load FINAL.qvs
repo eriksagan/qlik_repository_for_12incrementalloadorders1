@@ -1,0 +1,119 @@
+///$tab Incremental load FINAL
+Let vStartTimeNum = Num(Now());
+Trace Start: $(vStartTimeNum);
+
+// Timing
+Sub ElapsedTime
+    Let vElapsedTime = Timestamp(Num(Now()) - $(vStartTimeNum), 'mm:ss');
+    Trace Elapsed: $(vElapsedTime);
+End Sub
+Call ElapsedTime;
+
+// Counting
+Sub RowCount(table)
+    Let vTablename = table;
+    Let vRowCount = Num(NoOfRows('$(vTablename)'), '#,##0', '.', ',');
+    Trace $(vTablename): $(vRowCount) rows;
+End Sub;
+
+// Load vw_ordhdr history
+Trace Load vw_ordhdr history;
+tmp_vw_ordhdr_hist:
+LOAD
+    *,
+    prrowid as %id_hist
+FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr_res.qvd]
+(qvd);
+Call ElapsedTime;
+
+Call RowCount('tmp_vw_ordhdr_hist');
+
+// Get distinct timestamp values
+Trace Latest timestamp;
+tmp_timestamp:
+
+Load Distinct
+    pro2modified as timestamp
+Resident tmp_vw_ordhdr_hist;
+Call ElapsedTime;
+
+// Max
+tmp_last_update:
+Load
+    Max(timestamp) as max
+Resident tmp_timestamp;
+Drop Table tmp_timestamp;
+
+Let vLastUpdate = Peek('max');
+Drop Table tmp_last_update;
+Trace Last update: $(vLastUpdate);
+Call ElapsedTime;
+ 
+// Get delta
+Trace Delta;
+LIB Connect To 'DB_MONITOR_s0106db007';
+ 
+tmp_vw_ordhdr_delta:
+Noconcatenate
+
+Load *,
+     prrowid as %id_delta;
+SQL SELECT *
+FROM "QlikData"."dbo"."vw_ordhdr" WHERE pro2modified > $(vLastUpdate)-2;
+Call ElapsedTime;
+trace delta1;
+Call RowCount('tmp_vw_ordhdr_delta');
+
+// Eliminate deleted datasets
+// Get full load (id) and compare with history (id)
+Trace Inner Join with full load;
+
+Inner Join(tmp_vw_ordhdr_hist)
+Load *,
+     prrowid as %id_full;
+SQL SELECT prrowid
+FROM "QlikData"."dbo"."vw_ordhdr";
+
+Call ElapsedTime;
+trace delta1A;
+Call RowCount('tmp_vw_ordhdr_delta');
+ 
+
+DisConnect;
+
+// Concatenate delta with history
+// Keep updated datasets from delta
+Trace Left Join delta with history without duplicates;
+Left Join(tmp_vw_ordhdr_hist)
+Load prrowid,
+     %id_delta
+Resident tmp_vw_ordhdr_delta;
+
+Concatenate(tmp_vw_ordhdr_delta)
+Load *
+Resident tmp_vw_ordhdr_hist
+Where IsNull(%id_delta);
+
+Drop Table tmp_vw_ordhdr_delta;
+
+Call ElapsedTime;
+
+Drop Fields %id_hist, %id_delta, %id_full;
+Rename Table tmp_vw_ordhdr_hist to vw_ordhdr;
+Call RowCount('vw_ordhdr');
+
+Trace Store and drop;
+Store vw_ordhdr into [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr_res.qvd] (qvd);
+Drop Table vw_ordhdr;
+
+ 
+
+Call ElapsedTime;
+
+// Load vw_ordhdr
+vw_ordhdr:
+LOAD
+    *
+FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr.qvd]
+(qvd);
+Call ElapsedTime;

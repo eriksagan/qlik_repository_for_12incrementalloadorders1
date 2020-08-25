@@ -1,0 +1,2938 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qCardinal": 275,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$hidden",
+      "$system",
+      "$key"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qCardinal": 270,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$hidden",
+      "$system",
+      "$key"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "Pro2SrcPDB",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "Version_#",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Version"
+    ]
+  },
+  {
+    "qName": "Version_Comment",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Version"
+    ]
+  },
+  {
+    "qName": "Version_Date",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Version"
+    ]
+  },
+  {
+    "qName": "Version_Developer",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Version"
+    ]
+  },
+  {
+    "qName": "Version_ID",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Version"
+    ]
+  },
+  {
+    "qName": "abf_addrkey",
+    "qCardinal": 2022,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "abf_type",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "accept_flag",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "accept_xdate",
+    "qCardinal": 4810,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "accept_xtime",
+    "qCardinal": 45622,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "accept_xuserid",
+    "qCardinal": 773,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "actfrdch",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "actfrload",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "acttodch",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "acttoload",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "actvcode",
+    "qCardinal": 33,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "agent",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "alloc_date",
+    "qCardinal": 4732,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "alloc_prog",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "alloc_time",
+    "qCardinal": 56811,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "alloc_userid",
+    "qCardinal": 726,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "amsdate",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "businesstype",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cancel_date",
+    "qCardinal": 4289,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cancel_flag",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cancel_reasonkey",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cancel_time",
+    "qCardinal": 27145,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cancel_userid",
+    "qCardinal": 673,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cargo_value",
+    "qCardinal": 16,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ccycode",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "chgtot",
+    "qCardinal": 273547,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "city",
+    "qCardinal": 6,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "clncert",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "comp_date",
+    "qCardinal": 1808,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "comp_time",
+    "qCardinal": 48983,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "comp_userid",
+    "qCardinal": 475,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "compcode",
+    "qCardinal": 11,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "completed",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "consign",
+    "qCardinal": 18842,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "consignment_num",
+    "qCardinal": 535023,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "contract",
+    "qCardinal": 4203,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "costrelease",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "createby",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "createdate",
+    "qCardinal": 4903,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "createtime",
+    "qCardinal": 52347,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "createuserid",
+    "qCardinal": 817,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "csttot",
+    "qCardinal": 515809,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cusref",
+    "qCardinal": 518857,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cusref2",
+    "qCardinal": 55377,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cust",
+    "qCardinal": 3941,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "cutoffdate",
+    "qCardinal": 158,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "datum_days",
+    "qCardinal": 1337,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchaddrkey",
+    "qCardinal": 5838,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchg1key",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchg2key",
+    "qCardinal": 21,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchg3key",
+    "qCardinal": 168,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchg4key",
+    "qCardinal": 3345,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchport",
+    "qCardinal": 1431,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchwaitinghrs",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchwaitingresp",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dchzipcode",
+    "qCardinal": 42,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dedicode",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "deleted",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "delterm",
+    "qCardinal": 9,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "deptcode",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dmrgaddrkey",
+    "qCardinal": 5289,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dmrgccykey",
+    "qCardinal": 22,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dmrgdlyrat",
+    "qCardinal": 118,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dmrgfreday",
+    "qCardinal": 92,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dmrgfredayleft",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dmrginvrefother",
+    "qCardinal": 25,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dmrginvreftype",
+    "qCardinal": 5,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "docchemflag",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "docchemname",
+    "qCardinal": 9096,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "doctradeflag",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "doctradename",
+    "qCardinal": 20418,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dttext",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dupcusref_date",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "dupcusref_userid",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "edi",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "edi_pending",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "edi_ref",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ediapproved",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ediapprovuser",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ediconfirmed",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ediconfirmuser",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ediref",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "empkey",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpcapunit",
+    "qCardinal": 4,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkey",
+    "qCardinal": 4325,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkey2",
+    "qCardinal": 414,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkey3",
+    "qCardinal": 41,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkey4",
+    "qCardinal": 20,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkey5",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp1",
+    "qCardinal": 19,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp10",
+    "qCardinal": 22,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp11",
+    "qCardinal": 34,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp12",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$geoname",
+      "$relates_src_unit.eqpidkeyp12_GeoInfo"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp13",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$geoname",
+      "$relates_src_unit.eqpidkeyp13_GeoInfo"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp14",
+    "qCardinal": 28,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp15",
+    "qCardinal": 13,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp16",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp17",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp18",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp19",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp2",
+    "qCardinal": 23,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp20",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp3",
+    "qCardinal": 19,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp4",
+    "qCardinal": 7,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp5",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp6",
+    "qCardinal": 11,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp7",
+    "qCardinal": 57,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp8",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpidkeyp9",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpmaxcap",
+    "qCardinal": 6,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eqpmincap",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "equipmentsupplier",
+    "qCardinal": 5,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "eta",
+    "qCardinal": 5588,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "etd",
+    "qCardinal": 5561,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fincomp",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "forwarding_ind",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "forwardto",
+    "qCardinal": 213,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "frdchdate",
+    "qCardinal": 5519,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "frdchtime",
+    "qCardinal": 246,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "freightchg",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "frldgdate",
+    "qCardinal": 5647,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "frldgtime",
+    "qCardinal": 1153,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "frplandchdate",
+    "qCardinal": 5540,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "frplandchtime",
+    "qCardinal": 118,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "frplanldgtime",
+    "qCardinal": 905,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_actvcode",
+    "qCardinal": 30,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_compcode",
+    "qCardinal": 11,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_deptcode",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_flag",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_nosectval",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_xdate",
+    "qCardinal": 5092,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_xtime",
+    "qCardinal": 52819,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwd_xuserid",
+    "qCardinal": 735,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "fwdtouser",
+    "qCardinal": 198,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblconditions",
+    "qCardinal": 1222,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblcopyfreight",
+    "qCardinal": 14,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hbldeclaredccy",
+    "qCardinal": 7,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hbldeclaredonprint",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hbldeclaredvalue",
+    "qCardinal": 43,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblfreightchg",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblnumcopy",
+    "qCardinal": 18,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblnumorig",
+    "qCardinal": 14,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblorigfreight",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblthcpodchg",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "hblthcpolchg",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ihscode",
+    "qCardinal": 1582,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "import_ref",
+    "qCardinal": 179739,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "importuser",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "incoterm",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "internal_fwd",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "internal_ordno",
+    "qCardinal": 6163,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "invdate",
+    "qCardinal": 4406,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "invoicecycle",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "invoicegroupref",
+    "qCardinal": 41846,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "invoicerelease",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "invpref",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "invstat",
+    "qCardinal": 8,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ischild",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "isparent",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "jobno",
+    "qCardinal": 1155886,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgaddrkey",
+    "qCardinal": 6345,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgg1key",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgg2key",
+    "qCardinal": 21,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgg3key",
+    "qCardinal": 128,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgg4key",
+    "qCardinal": 2469,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgport",
+    "qCardinal": 1304,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgwaitinghrs",
+    "qCardinal": 15,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgwaitingresp",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ldgzipcode",
+    "qCardinal": 87,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "lfd",
+    "qCardinal": 15341,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "liaison",
+    "qCardinal": 295,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "lloydsno",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "loadno",
+    "qCardinal": 427384,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "mandrflag",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "mandrkey",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "mgraddrkey",
+    "qCardinal": 8,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "module",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "msgdate",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "msgloaddate",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "msgref",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "notes",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblconditions",
+    "qCardinal": 15587,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblcopyfreight",
+    "qCardinal": 9,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "obldeclaredccy",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "obldeclaredonprint",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "obldeclaredvalue",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblfreightchg",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblnumcopy",
+    "qCardinal": 15,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblnumorig",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblorigfreight",
+    "qCardinal": 6,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblthcpodchg",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "oblthcpolchg",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "odate",
+    "qCardinal": 5037,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "offerno",
+    "qCardinal": 96312,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "opencomp",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ordby",
+    "qCardinal": 915,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ordno",
+    "qCardinal": 1248418,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ordstatus",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ordtype",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ownregion",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "parentjobno",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "parentmovrecno",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "parentordno",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "plan_loading_date",
+    "qCardinal": 5646,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "predmrgaddrkey",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "predmrgccykey",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "predmrgdlyrat",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "predmrgfreday",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "predmrgfredayleft",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "predmrginvrefother",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "predmrginvreftype",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "prepaid",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "pro2created",
+    "qCardinal": 281168,
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "pro2modified",
+    "qCardinal": 1097589,
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "prodcode",
+    "qCardinal": 16433,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "prrowid",
+    "qCardinal": 1248418,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "purccykey",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "purpric",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "quochgtotal",
+    "qCardinal": 28137,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "quocsttotal",
+    "qCardinal": 116942,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "quotno",
+    "qCardinal": 128935,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "recordkey",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "refuse_flag",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "reopen_date",
+    "qCardinal": 982,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "reopen_time",
+    "qCardinal": 2498,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "reopen_userid",
+    "qCardinal": 230,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "repo",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "res_unit",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "roundtrip",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "rtm_flag",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "rtm_reason",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "sapopenbal",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "seal_number",
+    "qCardinal": 495254,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ship_notice_arrival",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ship_notice_date",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "ship_notice_time",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "shipper",
+    "qCardinal": 9131,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "shpline",
+    "qCardinal": 1035,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "special",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "tankclosedate",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "tccalc",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "tender",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "thcpodchg",
+    "qCardinal": 4,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "thcpolchg",
+    "qCardinal": 4,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "todchdate",
+    "qCardinal": 5524,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "todchtime",
+    "qCardinal": 273,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "toldgdate",
+    "qCardinal": 5629,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "toldgtime",
+    "qCardinal": 1180,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "toplandchdate",
+    "qCardinal": 5557,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "toplandchtime",
+    "qCardinal": 128,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "toplanldgdate",
+    "qCardinal": 5630,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "toplanldgtime",
+    "qCardinal": 913,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "trmode",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "unitkey",
+    "qCardinal": 190012,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "unitkey2",
+    "qCardinal": 126468,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "unitkey3",
+    "qCardinal": 17214,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "unitkey4",
+    "qCardinal": 17129,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "unitkey5",
+    "qCardinal": 261,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "vessel",
+    "qCardinal": 11743,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "vesselcode",
+    "qCardinal": 8781,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "voyage",
+    "qCardinal": 61618,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "vsbkcontact",
+    "qCardinal": 8917,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "vsbkref",
+    "qCardinal": 298960,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "xaction",
+    "qCardinal": 8,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "xdate",
+    "qCardinal": 4858,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "xlock",
+    "qCardinal": 56,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "xprog",
+    "qCardinal": 37,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "xtime",
+    "qCardinal": 53845,
+    "qTags": [],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  },
+  {
+    "qName": "xuserid",
+    "qCardinal": 1299,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "vw_ordhdr_hist"
+    ]
+  }
+]

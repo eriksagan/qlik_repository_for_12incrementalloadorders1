@@ -1,0 +1,19 @@
+///$tab Date Test 02 jan
+LIB CONNECT TO 'DB_MONITOR_s0106db007';
+
+[vw_date_test]:
+LOAD *;
+SQL SELECT *
+FROM "QlikData"."dbo"."vw_ordhdr" where pro2modified > getdate()-13 and pro2modified <=getdate()-12;
+
+store [vw_date_test] into [lib://FC_ET_MONITOR_DEV/Extract/vw_date_test.qvd] (qvd); 
+
+
+drop table [vw_date_test];
+
+
+vw_ordhdr_hist:
+LOAD
+    *
+FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_date_test.qvd]
+(qvd);

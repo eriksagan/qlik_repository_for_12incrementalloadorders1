@@ -1,0 +1,125 @@
+///$tab Demurrage
+[vw_Demurrage]:
+load *;
+
+Select 
+dm.job, dm.actvcode, dm.LoadRegion, dm.LoadSubRegion, dm.LoadCountry, dm.LoadCity, dm.DischargeRegion, dm.DischargeSubRegion, dm.DischargeCountry, dm.DischargeCity,
+dm.completed, dm.customer, dm.cust, dm.CustComp, dm.shipper,
+dm.jobperiod, dm.compcode, dm.sectcode, dm.DMRGFrDate, dm.frplanactsts,
+dm.dmrgccykey, dm.dmrgdlyrat,
+Cast(Case when dm.dmrgccykey <> 'USD' and convert(varchar(11),cy.exdate,103) = dm.CalcDate
+then dm.dmrgdlyrat * cy.exrate
+else dm.dmrgdlyrat
+end as Decimal(10,2)) as 'BaseRate',
+dm.dmrgfreday, dm.dmrgfinishflag, dm.dmrgreasontxt, dm.seqno, dm.EndSection, dm.tog3key, dm.todate,
+dm.CalcDate, dm.toplanactsts, dm.GrossUnits, dm.NettUnits, dm.ChgCode, dm.ChgFrDate, dm.ChgToDate, dm.ChgUnits, dm.DMRG_Base,
+dm.NettUnits - dm.ChgUnits as 'UnitsDiff',
+Cast(Case when dm.dmrgccykey <> 'USD' and convert(varchar(11),cy.exdate,103) = dm.CalcDate
+then dm.dmrgdlyrat * cy.exrate
+else dm.dmrgdlyrat
+end as Decimal(10,2)) * (dm.NettUnits - dm.ChgUnits) as 'DiffAmount'
+from
+(
+Select
+oh.ordno as 'Job', oh.actvcode,
+oh.ldgg1key, ldr.ldesc as'LoadRegion', oh.ldgg2key, lds.ldesc as 'LoadSubRegion', oh.ldgg3key, ldc.ldesc as 'LoadCountry', oh.ldgg4key, ldp.ldesc as 'LoadCity',
+oh.dchg1key, dcr.ldesc as 'DischargeRegion', oh.dchg2key, dcs.ldesc as 'DischargeSubRegion', oh.dchg3key, dcc.ldesc as 'DischargeCountry', oh.dchg4key, dcp.ldesc as 'DischargeCity',
+oh.completed, oh.ordno as 'jobs', oh.cust, cu.name as 'Customer', cu.compcode as 'CustComp', oh.shipper, sh.name as 'ShipperName',
+dh.jobperiod,
+oh.compcode,
+ds.sectcode, Convert(Varchar(11),ds.frdate,103) as 'DMRGFrDate', ds.frplanactsts,
+oh.dmrgccykey, oh.dmrgdlyrat,
+oh.dmrgfreday, --ds.dmrgfredayleft,
+ds.dmrgfinishflag, ds.dmrgreasontxt,
+dm.seqno, dm.sectcode as 'EndSection', dm.tog3key, convert(Varchar(11),dm.todate,103) as 'Todate',
+Convert(Varchar(11),Case
+       when dm.toplanactsts = 'A' and dm.todate < @BillToDate
+              then dm.todate
+                     else @Billtodate
+       end,103) as 'CalcDate',
+dm.toplanactsts,
+Case
+       when ds.frdate > @BillToDate
+              then 0
+       when dm.todate > @BilltoDate
+              then datediff(d,ds.frdate, @BillTodate) + 1
+       else datediff(d,ds.frdate, dm.todate) + 1
+end as 'GrossUnits',
+Case when
+(Case
+       when ds.frdate > @BillToDate
+              then 0
+       when dm.todate > @BilltoDate
+              then datediff(d,ds.frdate, @BillTodate) + 1
+       else datediff(d,ds.frdate, dm.todate) + 1
+end - oh.dmrgfreday) < 0 then 0
+else Case
+       when ds.frdate > @BillToDate
+              then 0
+       when dm.todate > @BilltoDate
+              then datediff(d,ds.frdate, @BillTodate) + 1
+       else datediff(d,ds.frdate, dm.todate) + 1
+end - oh.dmrgfreday
+end as 'NettUnits',
+isnull(db.chgcode,'') as 'ChgCode',
+isnull(db.DMRGstartdate,'') as 'ChgFrDate',
+isnull(db.DMRGEnddate,'') as 'ChgToDate',
+isnull(du.CHGUnits,0) as 'ChgUnits',
+isnull(db.DMRG_Base,0) as 'DMRG_Base',
+isnull(convert(Varchar(11),mt.MT_Date,103),'') as 'First_MT_Date'
+from
+SQL_LIVEDB.dbo.ordhdr OH
+inner join
+SQL_LIVEDB.dbo.desphdr DH on oh.jobno = dh.jobno
+inner join
+SQL_LIVEDB.dbo.despmov DM on oh.jobno = dm.jobno and dm.enddmrg = '1'
+inner join
+(select jobno, sectcode, frdate, frplanactsts, dmrgfreday, dmrgfredayleft, lastdmrgfrdate, lastdmrgtodate, dmrgfinishflag, dmrgreasontxt from SQL_LIVEDB.dbo.despmov where sectcode = 'DEMU' and frplanactsts = 'A') DS on oh.ordno = ds.jobno
+left join
+       (Select oc.ordno, oc.chgcode,  DMRGStartdate, DMRGEnddate, sum(oc.Baseamount) as 'DMRG_Base'
+              from SQL_LIVEDB.dbo.ordcharge OC
+                     inner join
+                           (Select ordno, convert(Varchar(11),(min(frdate)),103) as 'DMRGStartdate' from SQL_LIVEDB.dbo.ordcharge where chgcode = '321' group by ordno) SD on oc.ordno = sd.ordno
+                                  inner join
+                                         (Select ordno, convert(Varchar(11),(max(todate)),103) as 'DMRGEnddate' from SQL_LIVEDB.dbo.ordcharge where chgcode = '321' group by ordno) ED on oc.ordno = ed.ordno
+                           where oc.chgcode = '321' group by oc.ordno, oc.chgcode, dmrgstartdate, dmrgenddate) DB on oh.ordno = db.ordno
+left join
+(Select ordno, chgcode, sum(Units) as 'CHGUnits' from SQL_LIVEDB.dbo.ordcharge where chgcode = '321' and baseamount > 0 and disc_linkkey = 0 group by ordno, chgcode) DU on oh.ordno = du.ordno
+left join
+SQL_LIVEDB.dbo.address CU on oh.cust = cu.addrkey
+left join
+SQL_LIVEDB.dbo.address BA on oh.dmrgaddrkey = ba.addrkey
+left join
+SQL_LIVEDB.dbo.address SH on oh.shipper = sh.addrkey
+left join
+       (Select ms.jobno, min(ms.statusdate) as 'MT_Date'
+              from SQL_LIVEDB.dbo.jobinvsts MS
+                     inner join
+                           (select jobno, recno, seqno, sectcode from SQL_LIVEDB.dbo.despmov where sectcode = 'DEMU') DM on dm.jobno = ms.jobno and ms.recno > dm.recno
+              where ms.invsts like 'MT%'
+              group by ms.jobno) MT on oh.ordno = mt.jobno
+left join
+SQL_LIVEDB.dbo.g1code LDR on oh.ldgg1key = ldr.g1codekey /*Lesc*/
+left join
+SQL_LIVEDB.dbo.g2code LDS on oh.ldgg2key = lds.g2codekey
+left join
+SQL_LIVEDB.dbo.g3code LDC on oh.ldgg3key = ldc.g3codekey
+left join
+SQL_LIVEDB.dbo.g4code LDP on oh.ldgg4key = ldp.g4codekey
+left join
+SQL_LIVEDB.dbo.g1code DCR on oh.dchg1key = dcr.g1codekey /*Lesc*/
+left join
+SQL_LIVEDB.dbo.g2code DCS on oh.dchg2key = dcs.g2codekey
+left join
+SQL_LIVEDB.dbo.g3code DCC on oh.dchg3key = dcc.g3codekey
+left join
+SQL_LIVEDB.dbo.g4code DCP on oh.dchg4key = dcp.g4codekey
+Where
+//oh.completed = '1'
+//and
+oh.actvcode in ('SC' , 'BSC')
+and (dh.jobperiod like '%2020'
+or dh.jobperiod like '%2019')
+) DM
+left join
+SQL_LIVEDB.dbo.ccyex CY on dm.dmrgccykey = cy.fromccykey and cy.toccykey = 'USD' and convert(Varchar(11),cy.exdate,103) = dm.CalcDate

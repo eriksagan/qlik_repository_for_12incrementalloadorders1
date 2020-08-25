@@ -1,0 +1,1577 @@
+[
+  {
+    "qInfo": {
+      "qId": "c51f395f-6260-4e7d-93fa-d79eb3b9bb7e",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": "test snapshot"
+    },
+    "creationDate": "2020-07-28T07:53:17.975Z",
+    "qMeta": {
+      "privileges": [
+        "read",
+        "update",
+        "delete",
+        "exportdata"
+      ]
+    },
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 3,
+        "qcy": 1
+      },
+      "qDimensionInfo": [
+        {
+          "qFallbackTitle": "=timestamp(vLastUpdate)\r\n",
+          "qApprMaxGlyphCount": 19,
+          "qCardinal": 1,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "=timestamp(vLastUpdate)\r\n"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 1,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 0,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$numeric",
+            "$timestamp"
+          ],
+          "qDimensionType": "D",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "TS",
+            "qnDec": 0,
+            "qUseThou": 0,
+            "qFmt": "DD/MM/YYYY hh:mm:ss[.fff]"
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "=timestamp(vLastUpdate)\r\n"
+          ],
+          "qMin": 44040.40487615741,
+          "qMax": 44040.40487615741,
+          "qContinuousAxes": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qIsCalculated": true,
+          "qCardinalities": {
+            "qCardinal": 1,
+            "qHypercubeCardinal": 1,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "sczW",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlPosition": "dimension",
+            "urlLabel": "",
+            "linkUrl": ""
+          }
+        }
+      ],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "count(ordno)",
+          "qApprMaxGlyphCount": 7,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "I",
+            "qnDec": 0,
+            "qUseThou": 1,
+            "qFmt": "###0",
+            "qDec": "."
+          },
+          "qMin": 1238595,
+          "qMax": 1238595,
+          "qIsAutoFormat": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "jpALD",
+          "numFormatFromTemplate": true,
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "indicator": {
+              "showTextValues": true,
+              "applySegmentColors": false,
+              "position": "right"
+            }
+          },
+          "conditionalColoring": {
+            "segments": {
+              "limits": [],
+              "paletteColors": [
+                {
+                  "index": 6,
+                  "icon": "dot"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "qFallbackTitle": "Max(pro2modified)",
+          "qApprMaxGlyphCount": 19,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "TS",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qMin": 44040.410160300926,
+          "qMax": 44040.410160300926,
+          "qIsAutoFormat": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "qMiniChart": {
+            "qYMin": 44040.40685471065,
+            "qYMax": 44040.410160300926,
+            "qXMin": 44040.40685471065,
+            "qXMax": 44040.410160300926,
+            "qAttrExprInfo": []
+          },
+          "autoSort": true,
+          "cId": "sNc",
+          "numFormatFromTemplate": true,
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "miniChart",
+            "indicator": {
+              "showTextValues": true,
+              "applySegmentColors": false,
+              "position": "right"
+            },
+            "miniChart": {
+              "type": "sparkline",
+              "colors": {
+                "main": {
+                  "index": 1
+                },
+                "max": {
+                  "index": 0,
+                  "color": "none"
+                },
+                "min": {
+                  "index": 0,
+                  "color": "none"
+                },
+                "first": {
+                  "index": 0,
+                  "color": "none"
+                },
+                "last": {
+                  "index": 0,
+                  "color": "none"
+                },
+                "positive": {
+                  "index": 1
+                },
+                "negative": {
+                  "index": 10,
+                  "color": "#f93f17"
+                }
+              },
+              "showDots": true,
+              "yAxis": {
+                "scale": "local",
+                "position": "auto"
+              },
+              "dimension": {
+                "type": "expression",
+                "key": "pro2modified"
+              }
+            }
+          },
+          "conditionalColoring": {
+            "segments": {
+              "limits": [],
+              "paletteColors": [
+                {
+                  "index": 6,
+                  "icon": "dot"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        1,
+        2,
+        0
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "1238595",
+          "qNum": 1238595,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "28/07/2020 09:50:37",
+          "qNum": 44040.410160300926,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "1238595",
+                "qNum": 1238595,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "28/07/2020 09:50:37",
+                "qNum": 44040.410160300926,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qMiniChart": {
+                  "qMatrix": [
+                    [
+                      {
+                        "qText": "28/07/2020 09:45:52",
+                        "qNum": 44040.40685471065,
+                        "qElemNumber": 44
+                      },
+                      {
+                        "qText": "28/07/2020 09:45:52",
+                        "qNum": 44040.40685471065,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:45:52",
+                        "qNum": 44040.40685555556,
+                        "qElemNumber": 142
+                      },
+                      {
+                        "qText": "28/07/2020 09:45:52",
+                        "qNum": 44040.40685555556,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:45:54",
+                        "qNum": 44040.406881331015,
+                        "qElemNumber": 91
+                      },
+                      {
+                        "qText": "28/07/2020 09:45:54",
+                        "qNum": 44040.406881331015,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:45:55",
+                        "qNum": 44040.40688908565,
+                        "qElemNumber": 78
+                      },
+                      {
+                        "qText": "28/07/2020 09:45:55",
+                        "qNum": 44040.40688908565,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:05",
+                        "qNum": 44040.40700987269,
+                        "qElemNumber": 98
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:05",
+                        "qNum": 44040.40700987269,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:06",
+                        "qNum": 44040.4070147338,
+                        "qElemNumber": 79
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:06",
+                        "qNum": 44040.4070147338,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:11",
+                        "qNum": 44040.40707974537,
+                        "qElemNumber": 43
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:11",
+                        "qNum": 44040.40707974537,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:12",
+                        "qNum": 44040.407087534724,
+                        "qElemNumber": 42
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:12",
+                        "qNum": 44040.407087534724,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:25",
+                        "qNum": 44040.40724143518,
+                        "qElemNumber": 74
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:25",
+                        "qNum": 44040.40724143518,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:25",
+                        "qNum": 44040.407242974536,
+                        "qElemNumber": 73
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:25",
+                        "qNum": 44040.407242974536,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:25",
+                        "qNum": 44040.40724371528,
+                        "qElemNumber": 72
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:25",
+                        "qNum": 44040.40724371528,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:41",
+                        "qNum": 44040.40742592593,
+                        "qElemNumber": 132
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:41",
+                        "qNum": 44040.40742592593,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:42",
+                        "qNum": 44040.40743854167,
+                        "qElemNumber": 3
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:42",
+                        "qNum": 44040.40743854167,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:43",
+                        "qNum": 44040.40744447917,
+                        "qElemNumber": 21
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:43",
+                        "qNum": 44040.40744447917,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:46:43",
+                        "qNum": 44040.40744899306,
+                        "qElemNumber": 32
+                      },
+                      {
+                        "qText": "28/07/2020 09:46:43",
+                        "qNum": 44040.40744899306,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:09",
+                        "qNum": 44040.40774675926,
+                        "qElemNumber": 60
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:09",
+                        "qNum": 44040.40774675926,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:09",
+                        "qNum": 44040.40775061343,
+                        "qElemNumber": 59
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:09",
+                        "qNum": 44040.40775061343,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:10",
+                        "qNum": 44040.407762766205,
+                        "qElemNumber": 24
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:10",
+                        "qNum": 44040.407762766205,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:10",
+                        "qNum": 44040.40776292824,
+                        "qElemNumber": 12
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:10",
+                        "qNum": 44040.40776292824,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:21",
+                        "qNum": 44040.4078915162,
+                        "qElemNumber": 49
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:21",
+                        "qNum": 44040.4078915162,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:22",
+                        "qNum": 44040.40789482639,
+                        "qElemNumber": 37
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:22",
+                        "qNum": 44040.40789482639,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:32",
+                        "qNum": 44040.40801489583,
+                        "qElemNumber": 130
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:32",
+                        "qNum": 44040.40801489583,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:33",
+                        "qNum": 44040.408028854166,
+                        "qElemNumber": 50
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:33",
+                        "qNum": 44040.408028854166,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:43",
+                        "qNum": 44040.408146724534,
+                        "qElemNumber": 56
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:43",
+                        "qNum": 44040.408146724534,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:44",
+                        "qNum": 44040.40814841435,
+                        "qElemNumber": 88
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:44",
+                        "qNum": 44040.40814841435,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:44",
+                        "qNum": 44040.40815142361,
+                        "qElemNumber": 87
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:44",
+                        "qNum": 44040.40815142361,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:45",
+                        "qNum": 44040.40816076389,
+                        "qElemNumber": 86
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:45",
+                        "qNum": 44040.40816076389,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:45",
+                        "qNum": 44040.408168518516,
+                        "qElemNumber": 85
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:45",
+                        "qNum": 44040.408168518516,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:45",
+                        "qNum": 44040.4081709838,
+                        "qElemNumber": 84
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:45",
+                        "qNum": 44040.4081709838,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817349537,
+                        "qElemNumber": 80
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817349537,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817569444,
+                        "qElemNumber": 82
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817569444,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817604167,
+                        "qElemNumber": 136
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817604167,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817916667,
+                        "qElemNumber": 81
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:46",
+                        "qNum": 44040.40817916667,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:47",
+                        "qNum": 44040.408188043984,
+                        "qElemNumber": 33
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:47",
+                        "qNum": 44040.408188043984,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:47",
+                        "qNum": 44040.40818912037,
+                        "qElemNumber": 83
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:47",
+                        "qNum": 44040.40818912037,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:58",
+                        "qNum": 44040.40831666667,
+                        "qElemNumber": 107
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:58",
+                        "qNum": 44040.40831666667,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:58",
+                        "qNum": 44040.408316863424,
+                        "qElemNumber": 22
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:58",
+                        "qNum": 44040.408316863424,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:58",
+                        "qNum": 44040.40831704861,
+                        "qElemNumber": 89
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:58",
+                        "qNum": 44040.40831704861,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:47:59",
+                        "qNum": 44040.408321793984,
+                        "qElemNumber": 4
+                      },
+                      {
+                        "qText": "28/07/2020 09:47:59",
+                        "qNum": 44040.408321793984,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:09",
+                        "qNum": 44040.40844204861,
+                        "qElemNumber": 8
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:09",
+                        "qNum": 44040.40844204861,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:22",
+                        "qNum": 44040.40859684028,
+                        "qElemNumber": 135
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:22",
+                        "qNum": 44040.40859684028,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:22",
+                        "qNum": 44040.4085971875,
+                        "qElemNumber": 92
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:22",
+                        "qNum": 44040.4085971875,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:22",
+                        "qNum": 44040.40859922454,
+                        "qElemNumber": 58
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:22",
+                        "qNum": 44040.40859922454,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:24",
+                        "qNum": 44040.40861623843,
+                        "qElemNumber": 5
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:24",
+                        "qNum": 44040.40861623843,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:25",
+                        "qNum": 44040.408625,
+                        "qElemNumber": 146
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:25",
+                        "qNum": 44040.408625,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:35",
+                        "qNum": 44040.408743900465,
+                        "qElemNumber": 55
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:35",
+                        "qNum": 44040.408743900465,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.408750347226,
+                        "qElemNumber": 53
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.408750347226,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.40875123843,
+                        "qElemNumber": 45
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.40875123843,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.40875150463,
+                        "qElemNumber": 51
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.40875150463,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.40875181713,
+                        "qElemNumber": 15
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:36",
+                        "qNum": 44040.40875181713,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:47",
+                        "qNum": 44040.408878472226,
+                        "qElemNumber": 7
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:47",
+                        "qNum": 44040.408878472226,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:47",
+                        "qNum": 44040.40888434028,
+                        "qElemNumber": 71
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:47",
+                        "qNum": 44040.40888434028,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:59",
+                        "qNum": 44040.40902461806,
+                        "qElemNumber": 2
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:59",
+                        "qNum": 44040.40902461806,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:48:59",
+                        "qNum": 44040.40902623843,
+                        "qElemNumber": 31
+                      },
+                      {
+                        "qText": "28/07/2020 09:48:59",
+                        "qNum": 44040.40902623843,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:00",
+                        "qNum": 44040.40902850695,
+                        "qElemNumber": 34
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:00",
+                        "qNum": 44040.40902850695,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:00",
+                        "qNum": 44040.40903336806,
+                        "qElemNumber": 16
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:00",
+                        "qNum": 44040.40903336806,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:00",
+                        "qNum": 44040.409033993055,
+                        "qElemNumber": 106
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:00",
+                        "qNum": 44040.409033993055,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:14",
+                        "qNum": 44040.40919189815,
+                        "qElemNumber": 9
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:14",
+                        "qNum": 44040.40919189815,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:37",
+                        "qNum": 44040.40946033565,
+                        "qElemNumber": 41
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:37",
+                        "qNum": 44040.40946033565,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.40946917824,
+                        "qElemNumber": 30
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.40946917824,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.409469363425,
+                        "qElemNumber": 127
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.409469363425,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.409469756945,
+                        "qElemNumber": 29
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.409469756945,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.40946998843,
+                        "qElemNumber": 95
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:38",
+                        "qNum": 44040.40946998843,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:49",
+                        "qNum": 44040.40960092592,
+                        "qElemNumber": 52
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:49",
+                        "qNum": 44040.40960092592,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:50",
+                        "qNum": 44040.40960798611,
+                        "qElemNumber": 110
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:50",
+                        "qNum": 44040.40960798611,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:50",
+                        "qNum": 44040.40961238426,
+                        "qElemNumber": 141
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:50",
+                        "qNum": 44040.40961238426,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:50",
+                        "qNum": 44040.40961408565,
+                        "qElemNumber": 140
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:50",
+                        "qNum": 44040.40961408565,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:51",
+                        "qNum": 44040.409620833336,
+                        "qElemNumber": 63
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:51",
+                        "qNum": 44040.409620833336,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:49:51",
+                        "qNum": 44040.40962184028,
+                        "qElemNumber": 94
+                      },
+                      {
+                        "qText": "28/07/2020 09:49:51",
+                        "qNum": 44040.40962184028,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:03",
+                        "qNum": 44040.409764502314,
+                        "qElemNumber": 48
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:03",
+                        "qNum": 44040.409764502314,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:04",
+                        "qNum": 44040.40977241898,
+                        "qElemNumber": 147
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:04",
+                        "qNum": 44040.40977241898,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:04",
+                        "qNum": 44040.40977943287,
+                        "qElemNumber": 133
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:04",
+                        "qNum": 44040.40977943287,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:05",
+                        "qNum": 44040.4097866088,
+                        "qElemNumber": 36
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:05",
+                        "qNum": 44040.4097866088,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:06",
+                        "qNum": 44040.40979259259,
+                        "qElemNumber": 70
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:06",
+                        "qNum": 44040.40979259259,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:15",
+                        "qNum": 44040.4098971875,
+                        "qElemNumber": 47
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:15",
+                        "qNum": 44040.4098971875,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:31",
+                        "qNum": 44040.41008850694,
+                        "qElemNumber": 111
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:31",
+                        "qNum": 44040.41008850694,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.410106793985,
+                        "qElemNumber": 18
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.410106793985,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.4101071412,
+                        "qElemNumber": 20
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.4101071412,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.41010917824,
+                        "qElemNumber": 67
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.41010917824,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.41011064815,
+                        "qElemNumber": 64
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.41011064815,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.410115011575,
+                        "qElemNumber": 96
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:33",
+                        "qNum": 44040.410115011575,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:34",
+                        "qNum": 44040.410116087965,
+                        "qElemNumber": 131
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:34",
+                        "qNum": 44040.410116087965,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:34",
+                        "qNum": 44040.41011875,
+                        "qElemNumber": 137
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:34",
+                        "qNum": 44040.41011875,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:35",
+                        "qNum": 44040.4101349537,
+                        "qElemNumber": 0
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:35",
+                        "qNum": 44040.4101349537,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:35",
+                        "qNum": 44040.4101371875,
+                        "qElemNumber": 129
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:35",
+                        "qNum": 44040.4101371875,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:35",
+                        "qNum": 44040.41013873843,
+                        "qElemNumber": 27
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:35",
+                        "qNum": 44040.41013873843,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.410139548614,
+                        "qElemNumber": 149
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.410139548614,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014019676,
+                        "qElemNumber": 28
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014019676,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014806713,
+                        "qElemNumber": 77
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014806713,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014892361,
+                        "qElemNumber": 76
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014892361,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.410149270836,
+                        "qElemNumber": 150
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.410149270836,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014957176,
+                        "qElemNumber": 109
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.41014957176,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.4101503125,
+                        "qElemNumber": 14
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:36",
+                        "qNum": 44040.4101503125,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.410150578704,
+                        "qElemNumber": 65
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.410150578704,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015686343,
+                        "qElemNumber": 112
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015686343,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015755787,
+                        "qElemNumber": 35
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015755787,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015795139,
+                        "qElemNumber": 138
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015795139,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.4101591088,
+                        "qElemNumber": 128
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.4101591088,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015949074,
+                        "qElemNumber": 139
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.41015949074,
+                        "qElemNumber": 0
+                      }
+                    ],
+                    [
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.410160300926,
+                        "qElemNumber": 93
+                      },
+                      {
+                        "qText": "28/07/2020 09:50:37",
+                        "qNum": 44040.410160300926,
+                        "qElemNumber": 0
+                      }
+                    ]
+                  ],
+                  "qMin": 44040.40685471065,
+                  "qMax": 0
+                }
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 1,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "28/07/2020 09:43:01",
+                "qNum": 44040.40487615741,
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 2,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [
+        1,
+        2,
+        0
+      ],
+      "columnOrder": [
+        1,
+        2,
+        0
+      ],
+      "columnWidths": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "search": {
+      "sorting": "auto"
+    },
+    "showTitles": true,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "components": [],
+    "totals": {
+      "show": true,
+      "position": "noTotals",
+      "label": "Totals"
+    },
+    "scrolling": {
+      "horizontal": true,
+      "keepFirstColumnInView": false,
+      "keepFirstColumnInViewTouch": false
+    },
+    "multiline": {
+      "wrapTextInHeaders": true,
+      "wrapTextInCells": true
+    },
+    "visualization": "table",
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 945,
+          "h": 408
+        }
+      },
+      "rtl": false,
+      "parent": {
+        "h": 889,
+        "w": 1920
+      }
+    },
+    "visualizationType": "table",
+    "sourceObjectId": "zckzVBm",
+    "sheetId": "ebf8ad6c-b7d3-4d71-99ca-5890bdb987e3",
+    "timestamp": 1595922797951,
+    "isClone": false,
+    "supportExport": true
+  }
+]

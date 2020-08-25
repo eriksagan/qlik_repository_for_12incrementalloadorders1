@@ -1,0 +1,14 @@
+///$tab Start
+// Context
+Set vContext = 'DEV';
+//Set vContext = 'PROD';
+
+// Load *.qvs files
+$(Must_Include=lib://FC_S_$(vContext)/sub_log.qvs);
+$(Must_Include=lib://FC_S_$(vContext)/sub_store.qvs);
+
+// Start logging
+Call Log('Start');
+
+// Log context
+Call Log('$(vContext)');

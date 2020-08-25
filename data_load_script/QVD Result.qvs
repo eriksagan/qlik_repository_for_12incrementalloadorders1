@@ -1,0 +1,7 @@
+///$tab QVD Result
+// Load vw_ordhdr
+vw_ordhdr:
+LOAD
+    *
+FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr.qvd]
+(qvd);

@@ -1,0 +1,99 @@
+[
+  {
+    "qInfo": {
+      "qId": "053f298e-d8df-42d8-b0f7-7ca375ef3a6d",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTodayNum",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "44027"
+  },
+  {
+    "qInfo": {
+      "qId": "0b81f6fa-25e9-4264-ad1e-aa92df7b1fd7",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "name",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "src_unit"
+  },
+  {
+    "qInfo": {
+      "qId": "20138fc8-5425-4622-a412-1bee38b4b4b6",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "Last_Updated_vw_ordhdr",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "2a308970-bd28-405a-a26a-1ed54f5ffd3f",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "index",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "0"
+  },
+  {
+    "qInfo": {
+      "qId": "33c8df57-7cbe-4af7-be05-cfdcad8d060e",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "currentName",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "src_unit"
+  },
+  {
+    "qInfo": {
+      "qId": "808cb8fd-e6c5-4210-9e58-4cbd49d74aad",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vlastUpdateDATE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "30/12/1899 09:06:47"
+  },
+  {
+    "qInfo": {
+      "qId": "ee4af028-d9e3-443e-bbbd-684b6d4e6f51",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "matches",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "0"
+  }
+]

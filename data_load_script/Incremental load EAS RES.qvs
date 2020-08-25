@@ -1,0 +1,88 @@
+///$tab Incremental load EAS RES
+LIB CONNECT TO 'DB_MONITOR_s0106db007';
+
+Let vStartTimeNum = Num(Now());
+Trace Start: $(vStartTimeNum);
+
+// Counting
+Sub RowCount(table)
+    Let vTablename = table;
+    Let vRowCount = Num(NoOfRows('$(vTablename)'), '#,##0', '.', ',');
+    Trace $(vTablename): $(vRowCount) rows;
+End Sub;
+
+// Timing
+Sub ElapsedTime
+    Let vElapsedTime = Timestamp(Num(Now()) - $(vStartTimeNum), 'mm:ss');
+    Trace Elapsed: $(vElapsedTime);
+End Sub
+Call ElapsedTime;
+
+// Load vw_ordhdr
+vw_ordhdr_hist:
+LOAD
+    *,
+    prrowid as %id_hist
+FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr.qvd]
+(qvd);
+Call ElapsedTime;
+
+// Get distinct timestamp values
+tmp_timestamp:
+Load Distinct
+    pro2modified as timestamp
+Resident vw_ordhdr_hist;
+Call ElapsedTime;
+//today
+//let vToday = getdate;
+
+
+// Max
+tmp_last_update:
+Load
+    Max(timestamp) as max
+Resident tmp_timestamp;
+Drop Table tmp_timestamp;
+Let vLastUpdate = Peek('max');  //QLIK uses 30dec1899 SQL uses 01jan1990 as base date num=0
+//let vlastUpdateDATE =timestamp(0.379711111);
+//let vTodayNum = num(date(today(),'MMM-YYYY'));
+
+Drop Table tmp_last_update;
+trace update dt : $(vlastUpdateDATE);
+Trace Last update (1): $(vLastUpdate);
+Call ElapsedTime;
+
+//drop vw_ordhdr
+///drop table vw_ordhdr_hist;
+
+[incremental]:
+//load incremental
+//Noconcatenate
+LOAD *  , prrowid as %id_delta ;
+SQL select *
+FROM "QlikData"."dbo"."vw_ordhdr" where pro2modified > $(vLastUpdate)-2;
+//concatenate incremental with existing
+Call RowCount('incremental');
+concatenate
+Load
+*, prrowid as %id_hist
+//When incremental prrowid = prrowid existing do not concat (=update)
+//FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr.qvd] (qvd) where not exists (prrowid);
+Resident vw_ordhdr_hist where isnull (%id_hist);
+//Noconcatenate;
+
+inner join SQL SELECT prrowid FROM "QlikData"."dbo"."vw_ordhdr";
+
+Drop Fields %id_hist, %id_delta, %id_full;
+
+//store old qvd + incremental
+store [incremental] into [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr_res.qvd] (qvd);
+Call ElapsedTime;
+drop table incremental;
+
+vw_ordhdr_hist:
+LOAD
+    *
+FROM [lib://FC_ET_MONITOR_DEV/Extract/vw_ordhdr_res.qvd]
+(qvd);
+Call ElapsedTime;
