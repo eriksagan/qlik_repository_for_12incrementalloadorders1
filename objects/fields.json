@@ -147,7 +147,7 @@
   },
   {
     "qName": "abf_addrkey",
-    "qCardinal": 2022,
+    "qCardinal": 2025,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -190,7 +190,7 @@
   },
   {
     "qName": "accept_xtime",
-    "qCardinal": 45578,
+    "qCardinal": 45795,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -299,7 +299,7 @@
   },
   {
     "qName": "alloc_time",
-    "qCardinal": 56677,
+    "qCardinal": 57332,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -421,7 +421,7 @@
   },
   {
     "qName": "chgtot",
-    "qCardinal": 273551,
+    "qCardinal": 273556,
     "qTags": [
       "$numeric"
     ],
@@ -463,7 +463,7 @@
   },
   {
     "qName": "comp_time",
-    "qCardinal": 48973,
+    "qCardinal": 49225,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -504,7 +504,7 @@
   },
   {
     "qName": "consign",
-    "qCardinal": 18840,
+    "qCardinal": 18846,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -512,7 +512,7 @@
   },
   {
     "qName": "consignment_num",
-    "qCardinal": 535018,
+    "qCardinal": 535152,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -563,7 +563,7 @@
   },
   {
     "qName": "createtime",
-    "qCardinal": 52223,
+    "qCardinal": 52829,
     "qTags": [
       "$numeric"
     ],
@@ -584,7 +584,7 @@
   },
   {
     "qName": "csttot",
-    "qCardinal": 515811,
+    "qCardinal": 515823,
     "qTags": [
       "$numeric"
     ],
@@ -594,7 +594,7 @@
   },
   {
     "qName": "cusref",
-    "qCardinal": 518857,
+    "qCardinal": 518885,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -602,7 +602,7 @@
   },
   {
     "qName": "cusref2",
-    "qCardinal": 55377,
+    "qCardinal": 55388,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -610,7 +610,7 @@
   },
   {
     "qName": "cust",
-    "qCardinal": 3936,
+    "qCardinal": 4009,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -724,7 +724,7 @@
   },
   {
     "qName": "dchzipcode",
-    "qCardinal": 42,
+    "qCardinal": 44,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -776,7 +776,7 @@
   },
   {
     "qName": "dmrgaddrkey",
-    "qCardinal": 5277,
+    "qCardinal": 5349,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -873,7 +873,7 @@
   },
   {
     "qName": "doctradename",
-    "qCardinal": 20419,
+    "qCardinal": 20422,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1075,7 +1075,7 @@
   },
   {
     "qName": "eqpidkeyp10",
-    "qCardinal": 21,
+    "qCardinal": 23,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1249,7 +1249,7 @@
   },
   {
     "qName": "eqpidkeyp7",
-    "qCardinal": 57,
+    "qCardinal": 58,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1309,7 +1309,7 @@
   },
   {
     "qName": "eta",
-    "qCardinal": 5587,
+    "qCardinal": 5590,
     "qTags": [
       "$numeric",
       "$integer",
@@ -1322,7 +1322,7 @@
   },
   {
     "qName": "etd",
-    "qCardinal": 5560,
+    "qCardinal": 5562,
     "qTags": [
       "$numeric",
       "$integer"
@@ -1398,7 +1398,7 @@
   },
   {
     "qName": "frldgdate",
-    "qCardinal": 5647,
+    "qCardinal": 5648,
     "qTags": [
       "$numeric",
       "$integer"
@@ -1518,7 +1518,7 @@
   },
   {
     "qName": "fwd_xtime",
-    "qCardinal": 52787,
+    "qCardinal": 53039,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1578,7 +1578,7 @@
   },
   {
     "qName": "hbldeclaredonprint",
-    "qCardinal": 2,
+    "qCardinal": 3,
     "qTags": [
       "$numeric",
       "$integer"
@@ -1666,7 +1666,7 @@
   },
   {
     "qName": "ihscode",
-    "qCardinal": 1579,
+    "qCardinal": 1604,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1674,7 +1674,7 @@
   },
   {
     "qName": "import_ref",
-    "qCardinal": 179739,
+    "qCardinal": 179747,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1750,7 +1750,7 @@
   },
   {
     "qName": "invoicegroupref",
-    "qCardinal": 41845,
+    "qCardinal": 41854,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1810,7 +1810,7 @@
   },
   {
     "qName": "jobno",
-    "qCardinal": 1155898,
+    "qCardinal": 1155942,
     "qTags": [
       "$numeric",
       "$integer"
@@ -1904,7 +1904,7 @@
   },
   {
     "qName": "ldgzipcode",
-    "qCardinal": 87,
+    "qCardinal": 90,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -1942,7 +1942,7 @@
   },
   {
     "qName": "loadno",
-    "qCardinal": 427382,
+    "qCardinal": 427396,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2158,7 +2158,7 @@
   },
   {
     "qName": "offerno",
-    "qCardinal": 96278,
+    "qCardinal": 96502,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2188,7 +2188,7 @@
   },
   {
     "qName": "ordno",
-    "qCardinal": 1248431,
+    "qCardinal": 1248474,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2265,7 +2265,7 @@
   },
   {
     "qName": "plan_loading_date",
-    "qCardinal": 5646,
+    "qCardinal": 5647,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2364,7 +2364,7 @@
   },
   {
     "qName": "pro2created",
-    "qCardinal": 281181,
+    "qCardinal": 281224,
     "qTags": [
       "$numeric",
       "$timestamp"
@@ -2375,7 +2375,7 @@
   },
   {
     "qName": "pro2modified",
-    "qCardinal": 1097602,
+    "qCardinal": 1097645,
     "qTags": [
       "$numeric",
       "$timestamp"
@@ -2386,7 +2386,7 @@
   },
   {
     "qName": "prodcode",
-    "qCardinal": 16398,
+    "qCardinal": 16569,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2394,7 +2394,7 @@
   },
   {
     "qName": "prrowid",
-    "qCardinal": 1248431,
+    "qCardinal": 1248474,
     "qTags": [
       "$ascii",
       "$text"
@@ -2427,7 +2427,7 @@
   },
   {
     "qName": "quochgtotal",
-    "qCardinal": 28137,
+    "qCardinal": 28139,
     "qTags": [
       "$numeric"
     ],
@@ -2437,7 +2437,7 @@
   },
   {
     "qName": "quocsttotal",
-    "qCardinal": 116944,
+    "qCardinal": 116951,
     "qTags": [
       "$numeric"
     ],
@@ -2447,7 +2447,7 @@
   },
   {
     "qName": "quotno",
-    "qCardinal": 128937,
+    "qCardinal": 128946,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2466,7 +2466,7 @@
   },
   {
     "qName": "refuse_flag",
-    "qCardinal": 2,
+    "qCardinal": 3,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2575,7 +2575,7 @@
   },
   {
     "qName": "seal_number",
-    "qCardinal": 495263,
+    "qCardinal": 495272,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2613,7 +2613,7 @@
   },
   {
     "qName": "shipper",
-    "qCardinal": 9130,
+    "qCardinal": 9137,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2621,7 +2621,7 @@
   },
   {
     "qName": "shpline",
-    "qCardinal": 1032,
+    "qCardinal": 1046,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2718,7 +2718,7 @@
   },
   {
     "qName": "toldgdate",
-    "qCardinal": 5629,
+    "qCardinal": 5630,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2760,7 +2760,7 @@
   },
   {
     "qName": "toplanldgdate",
-    "qCardinal": 5630,
+    "qCardinal": 5631,
     "qTags": [
       "$numeric",
       "$integer"
@@ -2792,7 +2792,7 @@
   },
   {
     "qName": "unitkey",
-    "qCardinal": 190012,
+    "qCardinal": 190020,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2800,7 +2800,7 @@
   },
   {
     "qName": "unitkey2",
-    "qCardinal": 126468,
+    "qCardinal": 126477,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2848,7 +2848,7 @@
   },
   {
     "qName": "voyage",
-    "qCardinal": 61617,
+    "qCardinal": 61627,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2864,7 +2864,7 @@
   },
   {
     "qName": "vsbkref",
-    "qCardinal": 298964,
+    "qCardinal": 298997,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"
@@ -2896,7 +2896,7 @@
   },
   {
     "qName": "xlock",
-    "qCardinal": 44,
+    "qCardinal": 47,
     "qTags": [
       "$ascii",
       "$text"
@@ -2918,7 +2918,7 @@
   },
   {
     "qName": "xtime",
-    "qCardinal": 53741,
+    "qCardinal": 54248,
     "qTags": [],
     "qSrcTables": [
       "vw_ordhdr_hist"

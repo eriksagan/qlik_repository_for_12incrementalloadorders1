@@ -1,0 +1,30 @@
+{
+  "qProperty": {
+    "qInfo": {
+      "qId": "c7428d4b-e871-4794-b59a-b02bb1f267a4",
+      "qType": "sheet"
+    },
+    "qMetaDef": {
+      "title": "My new sheet",
+      "description": "",
+      "isBlueprintItem": true
+    },
+    "rank": 0.000002,
+    "thumbnail": {
+      "qStaticContentUrlDef": {}
+    },
+    "columns": 24,
+    "rows": 12,
+    "cells": [],
+    "qChildListDef": {
+      "qData": {
+        "title": "/title"
+      }
+    },
+    "gridResolution": "small",
+    "layoutOptions": {
+      "mobileLayout": "LIST"
+    }
+  },
+  "qChildren": []
+}
