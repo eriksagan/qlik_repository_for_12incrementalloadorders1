@@ -18,6 +18,9 @@ Sub ElapsedTime
     Trace Elapsed: $(vElapsedTime);
 End Sub
 Call ElapsedTime;
+LIB CONNECT TO 'DB_DWH-DEEPSEA-QLIKREAD_DEV';
+LIB CONNECT TO 'DB_MONITOR_s0106db007';
+LIB CONNECT TO 'DB_MONITOR_s0106db007';
 
 
 // Load vw_ordhdr

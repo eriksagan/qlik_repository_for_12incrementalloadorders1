@@ -4,11 +4,11 @@
   "qMigrationHash": "504d4e39a7133ee172fbe29aa58348b1e4054149",
   "qSavedInProductVersion": "12.674.6",
   "qThumbnail": {},
+  "description": "",
+  "stream": null,
+  "dynamicColor": "",
   "createdDate": "2020-07-16T07:06:48.512Z",
   "modifiedDate": "2020-08-25T11:45:00.814Z",
   "published": false,
-  "publishTime": "1753-01-01T00:00:00.000Z",
-  "description": "",
-  "dynamicColor": "",
-  "stream": null
+  "publishTime": "1753-01-01T00:00:00.000Z"
 }
